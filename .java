@@ -158,12 +158,12 @@ public class SistemaProdutos {
     public static void main(String[] args) {        
         // Criando um objeto Livro
         Livro livro = new Livro(
-            "O Senhor dos Anéis", 
+            "Can't Hurt Me", 
             45.90, 
-            "J.R.R. Tolkien", 
-            1200, 
+            "David Goggins", 
+            364, 
             true, 
-            "Fantasia"
+            "Autobiografia"
         );
         
         // Criando um objeto Camisa
@@ -173,7 +173,7 @@ public class SistemaProdutos {
             "Azul", 
             "M", 
             "Algodão", 
-            "Lacoste"
+            "Polo"
         );
         
         // Exibindo informações do livro
