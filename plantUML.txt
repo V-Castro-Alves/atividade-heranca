@@ -1,0 +1,61 @@
+@startuml
+!theme plain
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor Black
+    ArrowColor Black
+}
+
+class Produto {
+    # nome: String
+    # preco: double
+    --
+    + Produto(nome: String, preco: double)
+    + exibirInfo(): void
+    + getNome(): String
+    + setNome(nome: String): void
+    + getPreco(): double
+    + setPreco(preco: double): void
+}
+
+class Livro {
+    - autor: String
+    - numeroPaginas: int
+    - capaDura: boolean
+    - genero: String
+    --
+    + Livro(nome: String, preco: double, autor: String, numeroPaginas: int, capaDura: boolean, genero: String)
+    + exibirInfo(): void
+    + getAutor(): String
+    + setAutor(autor: String): void
+    + getNumeroPaginas(): int
+    + setNumeroPaginas(numeroPaginas: int): void
+    + isCapaDura(): boolean
+    + setCapaDura(capaDura: boolean): void
+    + getGenero(): String
+    + setGenero(genero: String): void
+}
+
+class Camisa {
+    - cor: String
+    - tamanho: String
+    - material: String
+    - marca: String
+    --
+    + Camisa(nome: String, preco: double, cor: String, tamanho: String, material: String, marca: String)
+    + exibirInfo(): void
+    + getCor(): String
+    + setCor(cor: String): void
+    + getTamanho(): String
+    + setTamanho(tamanho: String): void
+    + getMaterial(): String
+    + setMaterial(material: String): void
+    + getMarca(): String
+    + setMarca(marca: String): void
+}
+
+Produto <|-- Livro
+Produto <|-- Camisa
+
+@enduml
